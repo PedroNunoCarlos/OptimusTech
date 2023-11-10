@@ -1,0 +1,22 @@
+@import '../abstract/variaveis';
+
+.sobre-nos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 96px 0;
+    h3 {
+        color: $cor-primaria;
+    }
+    h1 {
+        font-size: 48px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 20px;
+        width: 60%;
+        text-align: center;
+        color: $cor-terciaria;
+    }
+}

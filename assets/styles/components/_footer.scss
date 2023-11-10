@@ -1,0 +1,47 @@
+@import '../abstract/variaveis';
+
+.rodape {
+    background-color: $cor-bg-footer;
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        color: $cor-secundaria;
+    }
+    .rodape__texto {
+        color: $cor-terciaria;
+        font-size: 20px;
+    }
+    .rodape__cadastro {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        input {
+            width: 390px;
+            padding: .9rem;
+            border: 1px solid $cor-de-borda;
+            border-radius: 5px;
+            &:focus-within {
+                outline: none;
+                border: 1px solid $cor-primaria;
+            }
+            &::placeholder {
+                color: $cor-terciaria;
+            }
+        }
+        button {
+            padding: .9rem .6rem;
+            background-color: $cor-primaria;
+            color: $cor-botao;
+            border: none;
+            border-radius: 5px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .rodape__copy {
+            color: $cor-texto-footer;
+        }
+}

@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin: 0 5%;
+  align-items: center;
+}
+.cabecalho .cabecalho__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.cabecalho .cabecalho__logo span {
+  color: #3A404E;
+}
+.cabecalho .cabecalho__menu .menu--lista {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.cabecalho .cabecalho__menu .menu--lista .menu--lista--item {
+  list-style: none;
+}
+.cabecalho .cabecalho__menu .menu--lista .menu--lista--item .menu--lista--item--link {
+  text-decoration: none;
+  color: #667085;
+}
+.cabecalho .cabecalho__menu .menu--lista .menu--lista--item .menu--lista--item--link:hover {
+  color: #8E2424;
+  border-bottom: 2px solid #8E2424;
+}
+.cabecalho .cabecalho__menu .menu--lista .menu--lista--item .menu--lista--item--link:focus {
+  color: #8E2424;
+}
+.cabecalho .cabecalho__login a {
+  color: #667085;
+  text-decoration: none;
+  padding-right: 1rem;
+}
+.cabecalho .cabecalho__login a:hover {
+  color: #8E2424;
+}
+.cabecalho .cabecalho__login button {
+  background-color: #8E2424;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+.cabecalho .cabecalho__login button:hover {
+  cursor: pointer;
+}
+
+.sobre-nos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 0;
+}
+.sobre-nos h3 {
+  color: #8E2424;
+}
+.sobre-nos h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.sobre-nos p {
+  font-size: 20px;
+  width: 60%;
+  text-align: center;
+  color: #667085;
+}
+
+.cards-dados {
+  display: flex;
+  gap: 32px;
+  padding: 0 5% 96px 5%;
+  margin-top: -96px;
+  justify-content: center;
+}
+.cards-dados .card {
+  width: 25%;
+  text-align: left;
+}
+.cards-dados .card h2 {
+  color: #8E2424;
+  font-size: 60px;
+}
+.cards-dados .card h4 {
+  font-size: 18px;
+}
+.cards-dados .card p {
+  color: #667085;
+  line-height: 1.5;
+}
+
+.vagas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5%;
+}
+.vagas .vagas__descricao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.vagas .vagas__descricao h3 {
+  background-color: rgba(142, 36, 36, 0.05);
+  color: #8E2424;
+  padding: 0.5rem;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.vagas .vagas__descricao h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.vagas .vagas__descricao p {
+  color: #667085;
+  font-size: 20px;
+}
+.vagas .vagas__aberta {
+  display: flex;
+  flex-direction: column;
+  margin: 64px 0;
+}
+.vagas .vagas__aberta .vagas__aberta--vaga {
+  display: grid;
+  grid-template-areas: "titulo titulo" "carga-horaria salario";
+  grid-template-columns: 15% 25% 25%;
+  border: 1px solid #EAECF0;
+  border-radius: 30px;
+  width: 760px;
+  margin-bottom: 1rem;
+  padding: 24px;
+}
+.vagas .vagas__aberta .vagas__aberta--vaga h4 {
+  grid-area: titulo;
+  font-size: 18px;
+}
+.vagas .vagas__aberta .vagas__aberta--vaga .vagas__aberta--vaga--carga-horaria {
+  grid-area: carga-horaria;
+  color: #667085;
+}
+.vagas .vagas__aberta .vagas__aberta--vaga .vagas__aberta--vaga--salario {
+  grid-area: salario;
+  color: #667085;
+}
+.vagas .comentarios-dos-colabores {
+  background-color: rgba(195, 25, 25, 0.03);
+  width: 90%;
+  text-align: center;
+  padding: 64px;
+  margin-bottom: 96px;
+}
+.vagas .comentarios-dos-colabores h5 {
+  color: #8E2424;
+  font-weight: 600;
+}
+.vagas .comentarios-dos-colabores .comentarios-dos-colabores--conteudo {
+  font-size: 36px;
+  color: #101828;
+  font-weight: 500;
+}
+.vagas .comentarios-dos-colabores .comentarios-dos-colabores--conteudo--nome {
+  font-size: 14px;
+  color: #101828;
+}
+.vagas .comentarios-dos-colabores .comentarios-dos-colabores--conteudo--funcao {
+  font-size: 14px;
+  color: #667085;
+}
+
+.rodape {
+  background-color: #F9FAFB;
+  padding: 96px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rodape h2 {
+  color: #101828;
+}
+.rodape .rodape__texto {
+  color: #667085;
+  font-size: 20px;
+}
+.rodape .rodape__cadastro {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.rodape .rodape__cadastro input {
+  width: 390px;
+  padding: 0.9rem;
+  border: 1px solid #EAECF0;
+  border-radius: 5px;
+}
+.rodape .rodape__cadastro input:focus-within {
+  outline: none;
+  border: 1px solid #8E2424;
+}
+.rodape .rodape__cadastro input::-moz-placeholder {
+  color: #667085;
+}
+.rodape .rodape__cadastro input::placeholder {
+  color: #667085;
+}
+.rodape .rodape__cadastro button {
+  padding: 0.9rem 0.6rem;
+  background-color: #8E2424;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.rodape .rodape__cadastro button:hover {
+  cursor: pointer;
+}
+.rodape .rodape__copy {
+  color: #98A2B3;
+}/*# sourceMappingURL=style.css.map */

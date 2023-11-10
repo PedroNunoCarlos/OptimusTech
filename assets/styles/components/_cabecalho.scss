@@ -1,0 +1,60 @@
+@import '../abstract/variaveis';
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin: 0 5%;
+    align-items: center;
+    .cabecalho__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: .5rem;
+        span {
+            color: $cor-logo;
+        }
+        
+    }
+    .cabecalho__menu {
+        .menu--lista {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            .menu--lista--item {
+                list-style: none;
+                .menu--lista--item--link {
+                    text-decoration: none;
+                    color: $cor-terciaria;
+                    &:hover {
+                        color: $cor-primaria;
+                        border-bottom: 2px solid $cor-primaria;
+                    }
+                    &:focus {
+                        color: $cor-primaria;
+                    }
+                }
+            }
+        }
+    }
+    .cabecalho__login {
+        a {
+            color: $cor-terciaria;
+            text-decoration: none;
+            padding-right: 1rem;
+            &:hover {
+                color: $cor-primaria;
+            }
+        }
+        button {
+            background-color: $cor-primaria;
+            color: $cor-botao;
+            padding: .5rem;
+            border-radius: 5px;
+            border: none;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

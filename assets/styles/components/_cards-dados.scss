@@ -1,0 +1,22 @@
+.cards-dados {
+        display: flex;
+        gap: 32px;
+        padding: 0 5% 96px 5%;
+        margin-top: -96px;
+        justify-content: center;
+        .card {
+            width: 25%;
+            text-align: left;
+            h2 {
+                color: $cor-primaria;
+                font-size: 60px;
+            }
+            h4 { 
+                font-size: 18px;
+            }
+            p {
+                color: $cor-terciaria;
+                line-height: 1.50;
+            }
+        }
+    }

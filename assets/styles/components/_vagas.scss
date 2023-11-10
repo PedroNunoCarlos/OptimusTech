@@ -1,0 +1,83 @@
+@import '../abstract/variaveis';
+.vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5%;
+    .vagas__descricao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+         h3 {
+            background-color: $cor-bg;
+            color: $cor-primaria;
+            padding: .5rem;
+            border-radius: 20px;
+            font-size: 14px;
+         }
+         
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+        p {
+            color: $cor-terciaria;
+            font-size: 20px;
+        }
+    
+    }
+    .vagas__aberta {
+        display: flex;
+        flex-direction: column;
+        margin: 64px 0;
+        .vagas__aberta--vaga {
+            display: grid;
+            grid-template-areas: 
+            "titulo titulo"
+            "carga-horaria salario";
+            grid-template-columns: 15% 25% 25%;
+            border: 1px solid $cor-de-borda;
+            border-radius: 30px;
+            width: 760px;
+            margin-bottom: 1rem;
+            padding: 24px;
+            h4 {
+                grid-area: titulo;
+                font-size: 18px;
+            }
+            .vagas__aberta--vaga--carga-horaria {
+                grid-area: carga-horaria;
+                color: $cor-terciaria;
+            }
+            .vagas__aberta--vaga--salario {
+                grid-area: salario;
+                color: $cor-terciaria;
+            }
+        }
+    }
+    .comentarios-dos-colabores {
+        background-color: $cor-bg-comentario;
+        width: calc(100% - 10%);
+        text-align: center;
+        padding: 64px;
+        margin-bottom: 96px;
+        h5 {
+            color: $cor-primaria;
+            font-weight: 600;
+        }
+        .comentarios-dos-colabores--conteudo {
+            font-size: 36px;
+            color: $cor-secundaria;
+            font-weight: 500;
+        }
+        .comentarios-dos-colabores--conteudo--nome {
+            font-size: 14px;
+            color: $cor-secundaria;
+        }
+        .comentarios-dos-colabores--conteudo--funcao {
+            font-size: 14px;
+            color: $cor-terciaria;
+        }
+    }
+}
